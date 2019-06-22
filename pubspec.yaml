@@ -1,0 +1,32 @@
+name: mayfair
+description: Mayfair Church App
+
+version: 0.1.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  url_launcher: ^5.0.3
+
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+   - assets/images/
+
+  fonts:
+  - family: Oswald
+    fonts:
+    - asset: assets/fonts/Oswald-Bold.ttf
+    - asset: assets/fonts/Oswald-Regular.ttf
