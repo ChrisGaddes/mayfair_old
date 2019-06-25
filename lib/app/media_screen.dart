@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SettingsScreen extends StatelessWidget {
-  SettingsScreen({Key key, this.title}) : super(key: key);
+class MediaScreen extends StatelessWidget {
+  MediaScreen({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -14,7 +14,7 @@ class SettingsScreen extends StatelessWidget {
           title: Text(title),
         ),
         body: Placeholder(
-          color: Colors.grey,
+          color: Colors.green,
         ),
       ),
     );
