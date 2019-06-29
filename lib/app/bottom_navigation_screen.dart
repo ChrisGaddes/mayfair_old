@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'bible_screen.dart';
+import 'apps_screen.dart';
 import 'events_screen.dart';
 import 'home_page.dart';
 import 'media_screen.dart';
@@ -18,7 +18,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
     HomePage(title: 'Home'),
     EventsScreen(title: 'Events'),
     MediaScreen(title: 'Media'),
-    BibleScreen(),
+    AppsScreen(title: 'Apps',),
     SettingsScreen(title: 'Settings'),
   ];
 
