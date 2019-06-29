@@ -36,14 +36,15 @@ class _HomePageState extends State<HomePage> {
               MayfairTextLogo(),
               SizedBox(height: 30),
               LoveFirstMotto(),
-              SizedBox(height: 30),
+              SizedBox(height: 13),
+              Divider(),
+              SizedBox(height: 13),
               Padding(
                 padding: const EdgeInsets.only(left: 16, right: 16),
                 child: ServiceTimesWidget(),
               ),
-              SizedBox(
-                height: 20,
-              ),
+              SizedBox(height: 13),
+              Divider(),
               LocationAndContactWidget(),
               SizedBox(height: 20),
             ],
@@ -245,7 +246,7 @@ class LocationAndContactWidget extends StatelessWidget {
         SizedBox(
           height: 10,
         ),
-        GestureDetector(
+        InkWell(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -301,7 +302,7 @@ class LocationAndContactWidget extends StatelessWidget {
         SizedBox(
           height: 10,
         ),
-        GestureDetector(
+        InkWell(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -354,7 +355,7 @@ class LocationAndContactWidget extends StatelessWidget {
         SizedBox(
           height: 10,
         ),
-        GestureDetector(
+        InkWell(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[

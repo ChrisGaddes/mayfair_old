@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'app/home_page.dart';
+import 'app/bottom_navigation_screen.dart';
 import 'common_widgets/ios_scroll_behavior.dart';
 
 void main() => runApp(MyApp());
@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: Colors.grey.shade900,
+        systemNavigationBarColor: Colors.grey.shade900,
       ),
     );
     return MaterialApp(
@@ -28,9 +29,7 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.dark, color: Colors.grey.shade900),
       ),
       debugShowCheckedModeBanner: false,
-      home: HomePage(
-        title: 'MAYFAIR',
-      ),
+      home: BottomNavigationScreen(),
     );
   }
 }
