@@ -48,27 +48,17 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
           icon: Icon(Icons.rss_feed),
           title: Text('Feed'),
         ),
-        BottomNavigationBarItem(icon: Icon(Icons.lock), title: Text('Login')),
-
-//        BottomNavigationBarItem(
-//          icon: Icon(Icons.event),
-//          title: Text("Events"),
-//        ),
-//        BottomNavigationBarItem(
-//          icon: Icon(Icons.book),
-//          title: Text("Bible"),
-//        ),
-//        BottomNavigationBarItem(
-//          icon: Icon(Icons.menu),
-//          title: Text("Settings"),
-//        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.lock),
+          title: Text('Login'),
+        ),
       ],
       currentIndex: _currentTabIndex,
       onTap: onTabTapped,
       backgroundColor: Colors.white,
-      //Colors.grey.shade900,
+      //Colors.grey.shade900
       unselectedItemColor: Colors.grey.shade500,
-      selectedItemColor: Colors.black,
+      selectedItemColor: Colors.blue,
     );
   }
 
