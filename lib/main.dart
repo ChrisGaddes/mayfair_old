@@ -11,8 +11,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
-        statusBarColor: Colors.grey.shade900,
-        systemNavigationBarColor: Colors.grey.shade900,
+        statusBarColor: Colors.white, //Colors.grey.shade900,
+        systemNavigationBarColor: Colors.white,
+        statusBarIconBrightness: Brightness.dark// Colors.grey.shade900,
       ),
     );
     return MaterialApp(
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
         appBarTheme: AppBarTheme(
-            brightness: Brightness.dark, color: Colors.grey.shade900),
+            brightness: Brightness.light, color: Colors.white ), //grey.shade900),
       ),
       debugShowCheckedModeBanner: false,
       home: BottomNavigationScreen(),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'image_carousel.dart';
+
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
 
@@ -16,9 +18,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           centerTitle: true,
-          title: Text(widget.title),
+          title: Text(
+            widget.title,
+            style: TextStyle(color: Colors.black),
+          ),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.more_vert),
@@ -31,16 +37,16 @@ class _HomePageState extends State<HomePage> {
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              HomeCoverImageWidget(),
-              SizedBox(height: 20),
-              MayfairTextLogo(),
-              SizedBox(height: 30),
+              ImageCarousel(),
+              SizedBox(height: 13),
+//              MayfairTextLogo(),
+//              SizedBox(height: 30),
               LoveFirstMotto(),
               SizedBox(height: 13),
               Divider(),
               SizedBox(height: 13),
               Padding(
-                padding: const EdgeInsets.only(left: 16, right: 16),
+                padding: const EdgeInsets.only(left: 32, right: 32),
                 child: ServiceTimesWidget(),
               ),
               SizedBox(height: 13),
@@ -51,19 +57,6 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-    );
-  }
-}
-
-class HomeCoverImageWidget extends StatelessWidget {
-  const HomeCoverImageWidget({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Image.asset('assets/images/jason_preaching.jpg'),
     );
   }
 }
@@ -417,3 +410,4 @@ void _launchAddressInMaps({String address}) async {
     throw 'Could not launch $url';
   }
 }
+
