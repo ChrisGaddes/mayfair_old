@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mayfair/app/login_screen.dart';
+import 'package:mayfair/app/authentication_screen.dart';
 import 'feed_screen.dart';
 import 'home_page.dart';
 import 'media_screen.dart';
@@ -16,8 +16,8 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
     HomePage(title: 'Home'),
     MediaScreen(title: 'Media'),
     FeedScreen(title: 'Feed'),
-    LoginScreen(
-      title: 'Login',
+    AuthenticationScreen(
+//      title: 'Login',
     ),
   ];
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class LoginScreen extends StatelessWidget {
+class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,8 +9,8 @@ class LoginScreen extends StatelessWidget {
       body: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle(),
         child: SafeArea(
-          child: Container(
-            child: SingleChildScrollView(
+          child: SingleChildScrollView(
+            child: Container(
               child: Column(
                 children: <Widget>[
                   Container(
@@ -22,25 +22,39 @@ class LoginScreen extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 32.0, right: 32.0),
                     child: TextField(
                       decoration: InputDecoration(
+                        labelText: 'First Name',
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 16.0),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 32.0, right: 32.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        labelText: 'Last Name',
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 16.0),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 32.0, right: 32.0),
+                    child: TextField(
+                      decoration: InputDecoration(
                         labelText: 'Email',
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 16,
-                  ),
+                  SizedBox(height: 16.0),
                   Padding(
                     padding: const EdgeInsets.only(left: 32.0, right: 32.0),
-                    child: TextField(
+                    child: TextFormField(
                       obscureText: true,
                       decoration: InputDecoration(
                         labelText: 'Password',
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 16,
-                  ),
+                  SizedBox(height: 16.0),
                   InkWell(
                     child: Container(
                       width: 300.0,
@@ -50,22 +64,13 @@ class LoginScreen extends StatelessWidget {
                           color: Colors.blue,
                           borderRadius: BorderRadius.all(Radius.circular(30))),
                       child: Text(
-                        'Sign In',
+                        'Submit',
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.white,
                         ),
                       ),
                     ),
-                  ),
-                  InkWell(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text('Forgot password?'),
-                    ),
-                    onTap: () {
-                      print('Tapped Forgot password button');
-                    },
                   ),
                 ],
               ),
