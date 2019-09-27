@@ -15,10 +15,11 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   final List<Widget> _tabs = [
     HomePage(title: 'Home'),
     MediaScreen(title: 'Media'),
+//    ImageCarousel(),
     FeedScreen(title: 'Feed'),
     AuthenticationScreen(
 //      title: 'Login',
-    ),
+        ),
   ];
 
   @override
@@ -64,9 +65,10 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
       ],
       currentIndex: _currentTabIndex,
       onTap: onTabTapped,
-      backgroundColor: Colors.grey.shade900,
+      backgroundColor: Colors.white,
+      //Colors.grey.shade900,
       unselectedItemColor: Colors.grey.shade500,
-      selectedItemColor: Colors.white,
+      selectedItemColor: Colors.black,
     );
   }
 
