@@ -1,0 +1,401 @@
+[
+  {
+    "id" : "12234567876543",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "The Heart (Psalms)",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Lead Strong",
+    "date" : "2019-06-09T14:30:00.00Z",
+    "partNumber" : 5,
+    "type" : "Sermon",
+    "picture" : "https://s3.amazonaws.com/media.cloversites.com/72/724cd0d1-a3ca-4ea5-be63-bc808094147b/gallery/slides/9e56692d-d80d-42f8-8431-7e6b9eb14538.jpeg",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/0eccd9d7db/audio.mp3"
+  },
+  {
+    "id" : "1223455765763",
+    "speakerName" : [
+      {
+        "prefix" : "Mr.",
+        "first" : "Noah",
+        "last" : "Merritt"
+      }
+    ],
+    "title" : "Allowing God's Truth To Encompass Your Life",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Lead Strong",
+    "date" : "2019-06-02T14:30:00.00Z",
+    "partNumber" : 4,
+    "type" : "Sermon",
+    "picture" : "https://s3.amazonaws.com/media.cloversites.com/72/724cd0d1-a3ca-4ea5-be63-bc808094147b/gallery/slides/9e56692d-d80d-42f8-8431-7e6b9eb14538.jpeg",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/b20364216f/audio.mp3"
+  },
+  {
+    "id" : "1223897568676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "The Power of Modeling",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Lead Strong",
+    "date" : "2019-05-19T14:30:00.00Z",
+    "partNumber" : 3,
+    "type" : "Sermon",
+    "picture" : "https://s3.amazonaws.com/media.cloversites.com/72/724cd0d1-a3ca-4ea5-be63-bc808094147b/gallery/slides/9e56692d-d80d-42f8-8431-7e6b9eb14538.jpeg",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/74cb405057/audio.mp3"
+  },
+  {
+    "id" : "1545646568676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Leading With Love",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Lead Strong",
+    "date" : "2019-05-12T14:30:00.00Z",
+    "partNumber" : 2,
+    "type" : "Sermon",
+    "picture" : "https://s3.amazonaws.com/media.cloversites.com/72/724cd0d1-a3ca-4ea5-be63-bc808094147b/gallery/slides/9e56692d-d80d-42f8-8431-7e6b9eb14538.jpeg",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/eac87a9cdc/audio.mp3"
+  },
+  {
+    "id" : "122355668676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "The Power of Modeling",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Lead Strong",
+    "date" : "2019-05-05T14:30:00.00Z",
+    "partNumber" : 1,
+    "type" : "Sermon",
+    "picture" : "https://s3.amazonaws.com/media.cloversites.com/72/724cd0d1-a3ca-4ea5-be63-bc808094147b/gallery/slides/9e56692d-d80d-42f8-8431-7e6b9eb14538.jpeg",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/e4a39918ed/audio.mp3"
+  },
+  {
+    "id" : "1584453568676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Tomb",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Gospel Fluency",
+    "date" : "2019-04-21T14:30:00.00Z",
+    "partNumber" : 9,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/633184def5/audio.mp3"
+  },
+  {
+    "id" : "158455668676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Cross",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Gospel Fluency",
+    "date" : "2019-04-14T14:30:00.00Z",
+    "partNumber" : 8,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/a692b59d64/audio.mp3"
+  },
+  {
+    "id" : "157765558676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Table",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Gospel Fluency",
+    "date" : "2019-04-07T14:30:00.00Z",
+    "partNumber" : 7,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/66a724ea1a/audio.mp3"
+  },
+  {
+    "id" : "5435345558676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Love",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Gospel Fluency",
+    "date" : "2019-03-31T14:30:00.00Z",
+    "partNumber" : 6,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/7aa3de13a5/audio.mp3"
+  },
+  {
+    "id" : "33636558676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Serve",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Gospel Fluency",
+    "date" : "2019-03-24T14:30:00.00Z",
+    "partNumber" : 5,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/745c327bbf/audio.mp3"
+  },
+  {
+    "id" : "5435745768676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Identity",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Gospel Fluency",
+    "date" : "2019-03-17T14:30:00.00Z",
+    "partNumber" : 4,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/1750b59229/audio.mp3"
+  },
+  {
+    "id" : "5435686858676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Miracle",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Gospel Fluency",
+    "date" : "2019-03-10T14:30:00.00Z",
+    "partNumber" : 3,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/edc7e520ec/audio.mp3"
+  },
+  {
+    "id" : "54353467676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Mission",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Gospel Fluency",
+    "date" : "2019-03-03T14:30:00.00Z",
+    "partNumber" : 2,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/4e9ca7e3b0/audio.mp3"
+  },
+  {
+    "id" : "568326867676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Authority",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Gospel Fluency",
+    "date" : "2019-02-27T14:30:00.00Z",
+    "partNumber" : 1,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/6da887439a/audio.mp3"
+  },
+  {
+    "id" : "5683243437676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Stewarding And Sharing The Gospel",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "Live Generously",
+    "date" : "2019-02-17T14:30:00.00Z",
+    "partNumber" : 1,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/2d50a58e6f/audio.mp3"
+  },
+  {
+    "id" : "5683243437676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Immersed: The Saving Work of Jesus",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "The Baptized life",
+    "date" : "2019-02-10T14:30:00.00Z",
+    "partNumber" : 6,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/daf88c0a51/audio.mp3"
+  },
+  {
+    "id" : "7878433243437676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Life After Death: Live Your Baptism",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "The Baptized life",
+    "date" : "2019-02-03T14:30:00.00Z",
+    "partNumber" : 5,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/40eee204ce/audio.mp3"
+  },
+  {
+    "id" : "589843243437676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Turning Point: Being Born Again",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "The Baptized life",
+    "date" : "2019-01-27T14:30:00.00Z",
+    "partNumber" : 4,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/b434e22aa0/audio.mp3"
+  },
+  {
+    "id" : "54343243437676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Buried Alive: A Better Story",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "The Baptized life",
+    "date" : "2019-01-20T14:30:00.00Z",
+    "partNumber" : 3,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/a3a767622f/audio.mp3"
+  },
+  {
+    "id" : "54343243437676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "Through The Water: A New Identity",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "The Baptized life",
+    "date" : "2019-01-13T14:30:00.00Z",
+    "partNumber" : 2,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/a78092c146/audio.mp3"
+  },
+  {
+    "id" : "68953243437676753",
+    "speakerName" : [
+      {
+        "prefix" : "Dr.",
+        "first" : "Jason",
+        "last" : "Bybee"
+      }
+    ],
+    "title" : "The Baptized Life: As Happy As Can B",
+    "subtitle" : "",
+    "description" : "",
+    "series" : "The Baptized life",
+    "date" : "2019-01-06T14:30:00.00Z",
+    "partNumber" : 1,
+    "type" : "Sermon",
+    "picture" : "https://picsum.photos/id/481/500/300",
+    "audioUrl" : "https://clovermedia.s3-us-west-2.amazonaws.com/store/5597af0f-80f6-464d-b0a3-1460d5675a9a/d484e113e5/audio.mp3"
+  }
+]

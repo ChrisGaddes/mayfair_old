@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-
-import 'apps_screen.dart';
-import 'events_screen.dart';
+import 'package:mayfair/app/login_screen.dart';
+import 'feed_screen.dart';
 import 'home_page.dart';
 import 'media_screen.dart';
-import 'settings_screen.dart';
 
 class BottomNavigationScreen extends StatefulWidget {
   @override
@@ -16,10 +14,11 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   int _currentTabIndex = 0;
   final List<Widget> _tabs = [
     HomePage(title: 'Home'),
-    EventsScreen(title: 'Events'),
     MediaScreen(title: 'Media'),
-    AppsScreen(title: 'Apps',),
-    SettingsScreen(title: 'Settings'),
+    FeedScreen(title: 'Feed'),
+    LoginScreen(
+      title: 'Login',
+    ),
   ];
 
   @override
@@ -38,24 +37,30 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
-          title: Text("Home"),
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.event),
-          title: Text("Events"),
+          title: Text('Home'),
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.play_circle_filled),
           title: Text("Media"),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.book),
-          title: Text("Bible"),
+          icon: Icon(Icons.rss_feed),
+          title: Text('Feed'),
         ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.menu),
-          title: Text("Settings"),
-        ),
+        BottomNavigationBarItem(icon: Icon(Icons.lock), title: Text('Login')),
+
+//        BottomNavigationBarItem(
+//          icon: Icon(Icons.event),
+//          title: Text("Events"),
+//        ),
+//        BottomNavigationBarItem(
+//          icon: Icon(Icons.book),
+//          title: Text("Bible"),
+//        ),
+//        BottomNavigationBarItem(
+//          icon: Icon(Icons.menu),
+//          title: Text("Settings"),
+//        ),
       ],
       currentIndex: _currentTabIndex,
       onTap: onTabTapped,
