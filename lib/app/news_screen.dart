@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-class FeedScreen extends StatelessWidget {
-  FeedScreen({Key key, this.title}) : super(key: key);
+class NewsFeedScreen extends StatelessWidget {
+  NewsFeedScreen({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -26,6 +26,7 @@ class FeedScreen extends StatelessWidget {
             children: <Widget>[
               Post(
                 title: 'Sympathy',
+                titleColor: Color(0xff508AB7),
                 text:
                     'To John and Sarah Smithly in the death of her mother, Leslie Wilkens. There will be a graveside service on Monday, August 30 at 12:00 at Oak Crest Cemetery. In lieu of flowers, the family requests donations be made to Sr. Jude\'s Children\'s hospital.\n\nTo Ronnie Louis & family on the death of his mother, Jamie Louis. Her service was yesterday. His address is 6254 Gambit Street Parksville, AZ 73827.',
                 date: DateTime.now(),
@@ -50,6 +51,7 @@ class FeedScreen extends StatelessWidget {
               ),
               Post(
                 title: 'Sympathy',
+                titleColor: Color(0xff508AB7),
                 text:
                     'To John and Sarah Smithly in the death of her mother, Leslie Wilkens. There will be a graveside service on Monday, August 30 at 12:00 at Oak Crest Cemetery. In lieu of flowers, the family requests donations be made to Sr. Jude\'s Children\'s hospital.\n\nTo Ronnie Louis & family on the death of his mother, Jamie Louis. Her service was yesterday. His address is 6254 Gambit Street Parksville, AZ 73827.',
                 date: DateTime.now(),
@@ -74,6 +76,7 @@ class FeedScreen extends StatelessWidget {
               ),
               Post(
                 title: 'Sympathy',
+                titleColor: Color(0xff508AB7),
                 text:
                     'To John and Sarah Smithly in the death of her mother, Leslie Wilkens. There will be a graveside service on Monday, August 30 at 12:00 at Oak Crest Cemetery. In lieu of flowers, the family requests donations be made to Sr. Jude\'s Children\'s hospital.\n\nTo Ronnie Louis & family on the death of his mother, Jamie Louis. Her service was yesterday. His address is 6254 Gambit Street Parksville, AZ 73827.',
                 date: DateTime.now(),
@@ -103,11 +106,12 @@ class FeedScreen extends StatelessWidget {
 }
 
 class Post extends StatelessWidget {
-  Post({Key key, this.title, this.text, this.date}) : super(key: key);
+  Post({Key key, this.title, this.text, this.date, this.titleColor}) : super(key: key);
 
   final String title;
   final String text;
   final DateTime date;
+  final Color titleColor;
 
   @override
   Widget build(BuildContext context) {
@@ -115,7 +119,7 @@ class Post extends StatelessWidget {
       width: double.infinity,
       child: Padding(
         padding:
-            const EdgeInsets.only(left: 16, right: 16, top: 16, bottom: 16),
+            const EdgeInsets.only(left: 32, right: 32, top: 16, bottom: 16),
         child: Column(
           children: <Widget>[
             Row(
@@ -123,11 +127,11 @@ class Post extends StatelessWidget {
               children: <Widget>[
                 Text(
                   '$title',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(color: titleColor, fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 Text(
                   DateFormat().format(date),
-                  style: TextStyle(color: Colors.grey),
+                  style: TextStyle(color: Colors.grey.shade400),
                 ),
               ],
             ),

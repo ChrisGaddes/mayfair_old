@@ -12,12 +12,28 @@ class MediaScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
 
+//    TextEditingController textController = TextEditingController();
+
     return SafeArea(
       child: Scaffold(
         body: Container(
           color: Colors.white,
           child: ListView(
             children: <Widget>[
+//              Container(
+//                height: 32,
+//                margin:
+//                    EdgeInsets.only(left: 16, right: 16, bottom: 16, top: 16),
+//                child: Align(alignment: Alignment.centerRight,
+//                  child: TextField(
+//                    expands: true,
+//                    minLines: null,
+//                    maxLines: null,
+//                    controller: textController,
+//                    decoration: InputDecoration.collapsed(hintText: 'Search'),
+//                  ),
+//                ),
+//              ),
               MediaItem(
                 screenWidth: width,
                 speakerName: 'Jason Bybee',
@@ -216,43 +232,49 @@ class MediaItem extends StatelessWidget {
             width: screenWidth * fractionOfScreenWidthForVideo,
             height:
                 screenWidth * fractionOfScreenWidthForVideo / videoAspectRatio,
-            child: Container(
-              child: Stack(
-                children: <Widget>[
-                  CachedNetworkImage(
-                    imageUrl: pictureUri,
-                    imageBuilder: (context, imageProvider) => Container(
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: imageProvider,
-                          fit: BoxFit.cover,
+            child: ClipRRect(
+              borderRadius: BorderRadius.all(
+                Radius.circular(16.0),
+              ),
+              child: Container(
+                child: Stack(
+                  children: <Widget>[
+                    CachedNetworkImage(
+                      imageUrl: pictureUri,
+                      imageBuilder: (context, imageProvider) => Container(
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: imageProvider,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      placeholder: (context, url) =>
+                          CircularProgressIndicator(),
+                      errorWidget: (context, url, error) => Icon(Icons.error),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Container(
+                        color: Colors.grey.withOpacity(0.7),
+                        child: Padding(
+                          padding: const EdgeInsets.only(
+                              left: 4, right: 4, top: 4, bottom: 4),
+                          child: Text(
+                            '${mediaLength.inHours.remainder(60)}:${mediaLength.inMinutes.remainder(60)}:${mediaLength.inSeconds.remainder(60)}',
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
-                    placeholder: (context, url) => CircularProgressIndicator(),
-                    errorWidget: (context, url, error) => Icon(Icons.error),
-                  ),
-                  Align(
-                    alignment: Alignment.bottomRight,
-                    child: Container(
-                      color: Colors.grey.withOpacity(0.7),
-                      child: Padding(
-                        padding: const EdgeInsets.only(
-                            left: 4, right: 4, top: 4, bottom: 4),
-                        child: Text(
-                          '${mediaLength.inHours.remainder(60)}:${mediaLength.inMinutes.remainder(60)}:${mediaLength.inSeconds.remainder(60)}',
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                    ),
-                  ),
 //                  Center(
 //                    child: Icon(
 //                      Icons.play_arrow, color: Colors.white,
 //                      size: 40,
 //                    ),
 //                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

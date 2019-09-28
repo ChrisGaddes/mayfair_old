@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mayfair/app/authentication_screen.dart';
-import 'feed_screen.dart';
+import 'news_screen.dart';
 import 'home_page.dart';
 import 'media_screen.dart';
 
@@ -15,11 +15,8 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   final List<Widget> _tabs = [
     HomePage(title: 'Home'),
     MediaScreen(title: 'Media'),
-//    ImageCarousel(),
-    FeedScreen(title: 'Feed'),
-    AuthenticationScreen(
-//      title: 'Login',
-        ),
+    NewsFeedScreen(title: 'Feed'),
+    AuthenticationScreen(),
   ];
 
   @override
@@ -34,6 +31,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
 
   BottomNavigationBar bottomNavigationBar() {
     return BottomNavigationBar(
+      elevation: 0.0,
       type: BottomNavigationBarType.fixed,
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
@@ -46,7 +44,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.rss_feed),
-          title: Text('Feed'),
+          title: Text('News'),
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.lock),
@@ -57,8 +55,8 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
       onTap: onTabTapped,
       backgroundColor: Colors.white,
       //Colors.grey.shade900
-      unselectedItemColor: Colors.grey.shade500,
-      selectedItemColor: Colors.blue,
+      unselectedItemColor: Colors.grey.shade600,
+      selectedItemColor: Color(0xff508AB7),//Color(0xff0179CA), //Color(0xff6DBCB6),
     );
   }
 

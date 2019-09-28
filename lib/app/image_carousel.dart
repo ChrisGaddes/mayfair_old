@@ -83,8 +83,8 @@ class _ImageCarouselState extends State<ImageCarousel> {
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: _current == index
-                      ? Color.fromRGBO(0, 0, 0, 0.9)
-                      : Color.fromRGBO(0, 0, 0, 0.4)),
+                      ? Color(0xff0179CA) //Color.fromRGBO(0, 0, 0, 0.9)
+                      : Color.fromRGBO(0, 0, 0, 0.2)),
             );
           },
         ),

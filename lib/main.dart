@@ -26,6 +26,8 @@ class MyApp extends StatelessWidget {
       title: 'Mayfair',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
+        accentColor: Colors.grey,
+        primaryColor: Colors.blueGrey.shade600,
         appBarTheme: AppBarTheme(
             brightness: Brightness.light, color: Colors.white ), //grey.shade900),
       ),

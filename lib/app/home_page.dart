@@ -20,9 +20,10 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
+          elevation: 0.0,
           centerTitle: true,
           title: Text(
-            widget.title,
+            'Mayfair',
             style: TextStyle(color: Colors.black),
           ),
           actions: <Widget>[
@@ -107,12 +108,12 @@ class LoveFirstMotto extends StatelessWidget {
         children: <Widget>[
           Text(
             'LOVE FIRST:',
-            style: TextStyle(fontSize: 25),
+            style: TextStyle(fontSize: 25, color: Colors.grey.shade600),
           ),
           SizedBox(height: 10),
           Text(
             'FOLLOW JESUS + LOVE GOD + LOVE OTHERS',
-            style: TextStyle(fontSize: 15),
+            style: TextStyle(fontSize: 15, color: Colors.grey.shade600),
           ),
         ],
       ),
@@ -136,25 +137,26 @@ class ServiceTimesWidget extends StatelessWidget {
             Text(
               'Sunday',
               style: TextStyle(
-                  color: Colors.grey.shade900,
+                  color: Color(0xff508AB7),
+
                   fontWeight: FontWeight.bold,
                   fontSize: 25),
             ),
           ],
         ),
         SizedBox(
-          height: 5,
+          height: 2,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text(
               '9:00 AM',
-              style: TextStyle(color: Colors.black, fontSize: 18),
+              style: TextStyle(color: Colors.grey.shade600, fontSize: 18),
             ),
             Text(
               'Worship Service',
-              style: TextStyle(color: Colors.black, fontSize: 18),
+              style: TextStyle(color: Colors.grey.shade600, fontSize: 18),
             ),
           ],
         ),
@@ -166,11 +168,11 @@ class ServiceTimesWidget extends StatelessWidget {
           children: <Widget>[
             Text(
               '10:30 AM',
-              style: TextStyle(color: Colors.black, fontSize: 18),
+              style: TextStyle(color: Colors.grey.shade600, fontSize: 18),
             ),
             Text(
               'Classes & Groups',
-              style: TextStyle(color: Colors.black, fontSize: 18),
+              style: TextStyle(color: Colors.grey.shade600, fontSize: 18),
             ),
           ],
         ),
@@ -182,11 +184,11 @@ class ServiceTimesWidget extends StatelessWidget {
           children: <Widget>[
             Text(
               '5:00 PM',
-              style: TextStyle(color: Colors.black, fontSize: 18),
+              style: TextStyle(color: Colors.grey.shade600, fontSize: 18),
             ),
             Text(
               'Evening Service',
-              style: TextStyle(color: Colors.black, fontSize: 18),
+              style: TextStyle(color: Colors.grey.shade600, fontSize: 18),
             ),
           ],
         ),
@@ -199,25 +201,25 @@ class ServiceTimesWidget extends StatelessWidget {
             Text(
               'Wednesday',
               style: TextStyle(
-                  color: Colors.grey.shade900,
+                  color: Color(0xff508AB7),
                   fontWeight: FontWeight.bold,
                   fontSize: 25),
             ),
           ],
         ),
         SizedBox(
-          height: 5,
+          height: 2,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text(
               '6:30 PM',
-              style: TextStyle(color: Colors.black, fontSize: 18),
+              style: TextStyle(color: Colors.grey.shade600, fontSize: 18),
             ),
             Text(
               'Classes & Groups',
-              style: TextStyle(color: Colors.black, fontSize: 18),
+              style: TextStyle(color: Colors.grey.shade600, fontSize: 18),
             ),
           ],
         )
@@ -250,7 +252,7 @@ class LocationAndContactWidget extends StatelessWidget {
                         'Mayfair+Church+of+Christ%2C+Carl+T+Jones+Drive+Southeast%2C+Huntsville%2C+AL',
                   );
                 },
-                color: Color(0xFF2979FF),
+                color: Color(0xff0179CA),
                 elevation: 0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(25),
