@@ -10,14 +10,15 @@ class NewsFeedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+          backgroundColor: Colors.white,
           appBar: AppBar(
+            elevation: 0.0,
             centerTitle: true,
             title: Text(title),
             actions: <Widget>[
               IconButton(
                   icon: Icon(
                     Icons.search,
-                    color: Colors.white,
                   ),
                   onPressed: null),
             ],
@@ -26,16 +27,16 @@ class NewsFeedScreen extends StatelessWidget {
             children: <Widget>[
               Post(
                 title: 'Sympathy',
-                titleColor: Color(0xff508AB7),
+//                titleColor: Color(0xff508AB7),
                 text:
                     'To John and Sarah Smithly in the death of her mother, Leslie Wilkens. There will be a graveside service on Monday, August 30 at 12:00 at Oak Crest Cemetery. In lieu of flowers, the family requests donations be made to Sr. Jude\'s Children\'s hospital.\n\nTo Ronnie Louis & family on the death of his mother, Jamie Louis. Her service was yesterday. His address is 6254 Gambit Street Parksville, AZ 73827.',
-                date: DateTime.now(),
+                date: DateTime.utc(2019, 9, 27),
               ),
               Post(
                 title: 'Prayer Request',
                 text:
                     'Mark Davis is recovering at Victory Rehabilitation.\n\nSarah Carter mother of Julie Wallace, is battling some major health issues and would appreciate prayers and cards of encouragement. (623 E. 7thSt. - Nashville, AK  72547)',
-                date: DateTime.now(),
+                date: DateTime.utc(2019, 9, 20),
               ),
               Post(
                 title: 'Baby Shower',
@@ -106,7 +107,8 @@ class NewsFeedScreen extends StatelessWidget {
 }
 
 class Post extends StatelessWidget {
-  Post({Key key, this.title, this.text, this.date, this.titleColor}) : super(key: key);
+  Post({Key key, this.title, this.text, this.date, this.titleColor})
+      : super(key: key);
 
   final String title;
   final String text;
@@ -127,10 +129,13 @@ class Post extends StatelessWidget {
               children: <Widget>[
                 Text(
                   '$title',
-                  style: TextStyle(color: titleColor, fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      color: titleColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  DateFormat().format(date),
+                  DateFormat('EEEE, MMMM d, y').format(date),
                   style: TextStyle(color: Colors.grey.shade400),
                 ),
               ],
