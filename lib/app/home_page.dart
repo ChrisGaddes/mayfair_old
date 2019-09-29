@@ -137,7 +137,7 @@ class ServiceTimesWidget extends StatelessWidget {
             Text(
               'Sunday',
               style: TextStyle(
-                  color: Color(0xff508AB7),
+                  color: Colors.blue,
 
                   fontWeight: FontWeight.bold,
                   fontSize: 25),
@@ -201,7 +201,7 @@ class ServiceTimesWidget extends StatelessWidget {
             Text(
               'Wednesday',
               style: TextStyle(
-                  color: Color(0xff508AB7),
+                  color: Colors.blue,
                   fontWeight: FontWeight.bold,
                   fontSize: 25),
             ),
@@ -252,7 +252,7 @@ class LocationAndContactWidget extends StatelessWidget {
                         'Mayfair+Church+of+Christ%2C+Carl+T+Jones+Drive+Southeast%2C+Huntsville%2C+AL',
                   );
                 },
-                color: Color(0xff0179CA),
+                color: Colors.blue,
                 elevation: 0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(25),

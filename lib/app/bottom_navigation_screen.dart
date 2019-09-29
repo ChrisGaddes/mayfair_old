@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mayfair/app/authentication_screen.dart';
+import 'package:mayfair/app/sermon_screen.dart';
 import 'news_screen.dart';
 import 'home_page.dart';
 import 'media_screen.dart';
@@ -14,7 +15,8 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   int _currentTabIndex = 0;
   final List<Widget> _tabs = [
     HomePage(title: 'Home'),
-    MediaScreen(title: 'Media'),
+    SermonScreen(),
+//    MediaScreen(title: 'Media'),
     NewsFeedScreen(title: 'Feed'),
     AuthenticationScreen(),
   ];
@@ -56,7 +58,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
       backgroundColor: Colors.white,
       //Colors.grey.shade900
       unselectedItemColor: Colors.grey.shade600,
-      selectedItemColor: Color(0xff508AB7),//Color(0xff0179CA), //Color(0xff6DBCB6),
+      selectedItemColor: Colors.blue,//Color(0xff508AB7),//Color(0xff0179CA), //Color(0xff6DBCB6),
     );
   }
 
